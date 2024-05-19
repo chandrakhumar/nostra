@@ -1,0 +1,399 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: 'poppins','sans-serif';
+}
+html
+{
+    width: 100%;
+    height: 90%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.firstHeader{
+    display:flex;
+    gap:90px;
+    justify-content: center;
+    background-color: black;
+    color:white;
+
+}
+.firstHeader button{
+    font-weight: 600;
+    font-size: larger;
+    background-color: black;
+    color: white;
+    border:none
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:25px;
+    position:sticky;
+    top:0;
+    z-index:1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: white;
+
+}
+.navbarLinks{
+    display:flex;
+    justify-content: space-between;
+    column-gap: 40px;
+    
+}
+.navbarLink a{
+    text-decoration: none;
+    color:black
+}
+
+.navbarLink a:hover{
+    text-decoration: underline;
+    color:black;
+
+}
+.navbarToggle{
+    display:none;
+}
+
+
+
+.side-navbar{
+    background-color: #1d232c;
+    width:50%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:-60%;
+    padding:20px;
+    color:white;
+    z-index: 1;
+}
+.sidenavbarLink{
+    margin-bottom: 30px;
+}
+.sidenavbarLink a{
+    text-decoration: none;
+    color:white;
+}
+.sidenavbarLink a:hover{
+    text-decoration: underline;
+}
+@media screen  and (max-width:700px){
+    .navbarToggle{
+        display:block;
+    }
+    .navbarLinks{
+        display:none;
+    }
+    
+}
+
+
+
+
+
+.slider-image-container{
+    position:absolute;
+    top: 120px;
+    padding:10px;
+    border-radius: 50px;
+}
+.leftButton{
+    position:absolute;
+    left:130px;
+    top:300px;
+    color:white;
+    z-index:1;
+    font-size:100px;
+}
+.rightButton{
+    position:absolute;
+    left:1400px;
+    top:175px;
+    color:white;
+    z-index:1;
+    font-size:100px;
+}
+.slider-content{
+    position:absolute;
+    left:260px;
+    top:240px;
+    z-index:1;
+    color:white
+
+}
+/* .slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+} */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    padding:10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 100%;
+    
+    /* left:500px; */
+    /* width: auto; */
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 8vmax;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transform: translateY(-50%);
+} 
+.prev{
+    left: 5%;
+    top:60%
+}
+.next{
+    left: 90%;
+    top:60%
+}
+ /* .next {
+    right: 200px;
+    border-radius: 3px 0 0 3px;
+} */
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.slide .next{
+    left: 1368px;
+    top: 365px;
+    font-size: 5vw;
+    background: none;
+}
+.brands{
+    padding:20px;
+}
+.brandImages img{
+    width:120px;
+    padding:60px
+    
+}
+.brandNames{
+   display:flex;
+   gap: 160px;
+   position:relative;
+   left:80px;
+   bottom:50px;
+
+}
+.customer{
+    position:relative;
+    bottom:25px;
+}
+
+.experience{
+    position:relative;
+    bottom: 94px;
+    left: 793px;
+    font-weight: 400;
+    font-size: larger;
+}
+.service-container2{
+    display:flex;
+    justify-content: space-between;
+    padding:10px
+}
+.container1{
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    width:350px;
+    height:130px;
+    padding:10px
+}
+.shirt-container{
+    display:flex;
+    justify-content: space-between;
+
+}
+.shirt1{
+    border-radius: 5px;
+    padding:10px;
+
+}
+.shirt1 button{
+    width:200px;
+    height:50px;
+    background-color: white;
+    color:black;
+    border-radius: 5px;
+    position:relative;
+    bottom: 108px;
+    left: 45px;
+}
+.shirt2 button{
+    width: 99px;
+    height: 41px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    bottom: 309px;
+    left: 7px;
+}
+.shirt2 i{
+   position:relative;
+    bottom:52px; 
+    left:161px;
+    font-size:xx-large;
+
+}
+.limited-offer {
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    padding: 20px;
+    font-size: 2vw
+}
+.limited-offer-text button{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    color: #1D232C;
+    border-radius: 10px;
+    border: none;
+}
+.news button{
+    width: 123px;
+    height: 38px;
+    position: relative;
+    top: -572px;
+    right: 316px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    padding: 5px;
+}
+.news {
+    height:200px;
+}
+.footer{
+    
+        font-size: 2vw;
+        margin-top: 5vw;
+        padding: 40px;
+        background-color: #1D232C;
+        color: #E2E1E1;
+        box-sizing: border-box;
+        
+}
+
+
+/* 
+collection page */
+
+.filter-section {
+    flex-basis: 25%;
+    position: relative;
+    font-size: 2vw;
+    padding:10px;
+}
+.filter-section-colors{
+    margin-top:20px;
+}
+.filter-section-arrivals{
+    margin-top:20px;
+}
+.vertical-line {
+    border: none;
+    border-left: 3px solid #1D232C;
+    height: 193%;
+    margin: 0 20px;
+    position: absolute;
+    top: 0px;
+    left: 310px;
+}
+.search{
+    width: 80%;
+    position: relative;
+    bottom: 638px;
+    left: 396px;
+  
+}
+.products{
+    height:600px;
+}
+.products1 {
+    
+    display:flex;
+   flex-wrap: wrap;
+   position: relative;
+   bottom: 590px;
+    left: 383px;
+    gap: 80px;
+}
+.products2 {
+    
+    display:flex;
+   flex-wrap: wrap;
+   position: relative;
+   bottom: 590px;
+    left: 383px;
+    gap: 80px;
+}
+.products3 {
+    
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 590px;
+     left: 383px;
+     gap: 80px;
+}
+.container-contact{
+    background-color: #1D232C;
+    height:500px;
+    padding:40px;
+    margin:40px;
+}
+.contact button{
+    font-weight: 700;
+    position: absolute;
+    top: 650px;
+    /* left: 312px; */
+    right: 1273px;
+    width: 84px;
+    background-color: blue;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0px;
+    font-size: large;
+    color: white
+}
